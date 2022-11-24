@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOS DE LA MANO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <center>
+        <h1>GESTOS</h1>
+        <br>
+        <h3>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9995;</span>
+        <span>&#9996;</span>
+        <span>&#127877;</span>
+        </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Toma tu foto para generar un emoji
+            <br>
+          <b style="color: yellow">Dos</b>
+          <br>
+          <b style="color: rgb(199, 62, 199)">Like</b>
+          <br>
+          <b style="color: rgb(94, 94, 244)">Ok</b>
+          <br>
+          <b style="color: rgb(248, 61, 104)">Detente</b>
+          <br>
+        </p>
+       
+            <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Vista de la cámara web - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-warning">Capturar imagen</button>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Predicción 1 - </label>
+            <p class="emotion_name" id="result_emotion_name"></p>
+            <p class="emoji" id="update_emoji"></p>
+  
+            <label>Predicción 2 - </label>
+            <p class="emotion_name" id="result_emotion_name2"></p>
+            <p class="emoji" id="update_emoji2"></p>
+          </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Instantánea - </label>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="check();" class="btn btn-success">Predecir emoción</button>
+           </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </center>
+</body>
+</html>
